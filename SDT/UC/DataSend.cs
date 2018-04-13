@@ -115,7 +115,7 @@ namespace ZXBC.UC
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnAutoSend_Click(object sender, EventArgs e)
+        private void DS_AutoSend_btn_Click(object sender, EventArgs e)
         {
             if (AutoSend == false)
             {

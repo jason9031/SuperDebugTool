@@ -33,6 +33,10 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DS_dataGridView = new System.Windows.Forms.DataGridView();
+            this.IsAutoSend = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.CType = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CMDText = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSend = new System.Windows.Forms.DataGridViewButtonColumn();
             this.DS_CMS = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.MS_Add = new System.Windows.Forms.ToolStripMenuItem();
             this.MS_Edit = new System.Windows.Forms.ToolStripMenuItem();
@@ -43,10 +47,6 @@
             this.lb_time_unit = new System.Windows.Forms.Label();
             this.lb_sd_num = new System.Windows.Forms.Label();
             this.linkLb_sd_num = new System.Windows.Forms.LinkLabel();
-            this.IsAutoSend = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.CType = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CMDText = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSend = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DS_dataGridView)).BeginInit();
             this.DS_CMS.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.SD_time)).BeginInit();
@@ -91,6 +91,43 @@
             this.DS_dataGridView.TabIndex = 0;
             this.DS_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DS_dataGridView_CellContentClick);
             // 
+            // IsAutoSend
+            // 
+            this.IsAutoSend.HeaderText = "参与循环";
+            this.IsAutoSend.Name = "IsAutoSend";
+            this.IsAutoSend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.IsAutoSend.Width = 60;
+            // 
+            // CType
+            // 
+            this.CType.DataPropertyName = "ContentTypeName";
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CType.DefaultCellStyle = dataGridViewCellStyle2;
+            this.CType.HeaderText = "类型";
+            this.CType.Name = "CType";
+            this.CType.ReadOnly = true;
+            this.CType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            this.CType.Width = 60;
+            // 
+            // CMDText
+            // 
+            this.CMDText.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CMDText.DataPropertyName = "Text";
+            this.CMDText.HeaderText = "命令";
+            this.CMDText.Name = "CMDText";
+            this.CMDText.ReadOnly = true;
+            // 
+            // btnSend
+            // 
+            this.btnSend.HeaderText = "发送";
+            this.btnSend.Name = "btnSend";
+            this.btnSend.ReadOnly = true;
+            this.btnSend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.btnSend.Text = "发送";
+            this.btnSend.UseColumnTextForButtonValue = true;
+            this.btnSend.Width = 60;
+            // 
             // DS_CMS
             // 
             this.DS_CMS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -130,6 +167,7 @@
             this.DS_AutoSend_btn.TabIndex = 2;
             this.DS_AutoSend_btn.Text = "循环发送";
             this.DS_AutoSend_btn.UseVisualStyleBackColor = true;
+            this.DS_AutoSend_btn.Click += new System.EventHandler(this.DS_AutoSend_btn_Click);
             // 
             // lb_sd_time
             // 
@@ -189,43 +227,6 @@
             this.linkLb_sd_num.TabStop = true;
             this.linkLb_sd_num.Text = "0";
             this.linkLb_sd_num.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLb_sd_num_LinkClicked);
-            // 
-            // IsAutoSend
-            // 
-            this.IsAutoSend.HeaderText = "参与循环";
-            this.IsAutoSend.Name = "IsAutoSend";
-            this.IsAutoSend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.IsAutoSend.Width = 60;
-            // 
-            // CType
-            // 
-            this.CType.DataPropertyName = "ContentTypeName";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CType.DefaultCellStyle = dataGridViewCellStyle2;
-            this.CType.HeaderText = "类型";
-            this.CType.Name = "CType";
-            this.CType.ReadOnly = true;
-            this.CType.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.CType.Width = 60;
-            // 
-            // CMDText
-            // 
-            this.CMDText.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CMDText.DataPropertyName = "Text";
-            this.CMDText.HeaderText = "命令";
-            this.CMDText.Name = "CMDText";
-            this.CMDText.ReadOnly = true;
-            // 
-            // btnSend
-            // 
-            this.btnSend.HeaderText = "发送";
-            this.btnSend.Name = "btnSend";
-            this.btnSend.ReadOnly = true;
-            this.btnSend.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.btnSend.Text = "发送";
-            this.btnSend.UseColumnTextForButtonValue = true;
-            this.btnSend.Width = 60;
             // 
             // DataSend
             // 

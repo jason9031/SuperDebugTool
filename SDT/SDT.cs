@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZXBC.Lib;
 
 namespace SDT
 {
@@ -15,6 +16,11 @@ namespace SDT
         public Form1()
         {
             InitializeComponent();
+            this.dataSend1.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.DataSender_EventDataSend);
+        }
+        private bool DataSender_EventDataSend(byte[] data)
+        {
+            return serialPortCom1.SendData(data);
         }
     }
 }
