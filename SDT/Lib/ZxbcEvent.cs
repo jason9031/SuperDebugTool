@@ -13,7 +13,7 @@ namespace ZXBC.Lib
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="data"></param>
-        //public delegate void DataReceivedHandler(object sender, byte[] data);
+        public delegate void DataReceivedHandler(object sender, byte[] data);
 
         /// <summary>
         /// 发送数据事件

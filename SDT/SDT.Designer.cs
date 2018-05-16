@@ -28,31 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
+            this.serialPortCom2 = new ZXBC.UC.SerialPortCom();
+            this.dataSend2 = new ZXBC.UC.DataSend();
+            this.dateReceive1 = new ZXBC.UC.DateReceive();
             this.dataSend1 = new ZXBC.UC.DataSend();
+            this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
+            this.dateReceive2 = new ZXBC.UC.DateReceive();
             this.SuspendLayout();
             // 
-            // serialPortCom1
+            // serialPortCom2
             // 
-            this.serialPortCom1.Location = new System.Drawing.Point(12, 12);
-            this.serialPortCom1.Name = "serialPortCom1";
-            this.serialPortCom1.Size = new System.Drawing.Size(135, 184);
-            this.serialPortCom1.TabIndex = 0;
+            this.serialPortCom2.Location = new System.Drawing.Point(27, 27);
+            this.serialPortCom2.Name = "serialPortCom2";
+            this.serialPortCom2.Size = new System.Drawing.Size(135, 184);
+            this.serialPortCom2.TabIndex = 1;
             // 
-            // dataSend1
+            // dataSend2
             // 
-            this.dataSend1.Location = new System.Drawing.Point(167, 12);
-            this.dataSend1.Name = "dataSend1";
-            this.dataSend1.Size = new System.Drawing.Size(542, 217);
-            this.dataSend1.TabIndex = 1;
+            this.dataSend2.Location = new System.Drawing.Point(236, 12);
+            this.dataSend2.Name = "dataSend2";
+            this.dataSend2.Size = new System.Drawing.Size(542, 217);
+            this.dataSend2.TabIndex = 0;
+            // 
+            // dateReceive2
+            // 
+            this.dateReceive2.Location = new System.Drawing.Point(47, 246);
+            this.dateReceive2.Name = "dateReceive2";
+            this.dateReceive2.Size = new System.Drawing.Size(498, 264);
+            this.dateReceive2.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(824, 356);
-            this.Controls.Add(this.dataSend1);
-            this.Controls.Add(this.serialPortCom1);
+            this.ClientSize = new System.Drawing.Size(836, 546);
+            this.Controls.Add(this.dateReceive2);
+            this.Controls.Add(this.serialPortCom2);
+            this.Controls.Add(this.dataSend2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -63,6 +75,10 @@
 
         private ZXBC.UC.SerialPortCom serialPortCom1;
         private ZXBC.UC.DataSend dataSend1;
+        private ZXBC.UC.DateReceive dateReceive1;
+        private ZXBC.UC.DataSend dataSend2;
+        private ZXBC.UC.SerialPortCom serialPortCom2;
+        private ZXBC.UC.DateReceive dateReceive2;
     }
 }
 

@@ -8,13 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using ZXBC.Lib;
 
 namespace ZXBC.UC
 {
     public partial class SerialPortCom : UserControl
     {
         private SerialPort ComDevice = new SerialPort();
-
+        public event ZxbcEvent.DataReceivedHandler DataReceived;
         public SerialPortCom()
         {
             InitializeComponent();
@@ -38,6 +39,7 @@ namespace ZXBC.UC
         {
             byte[] ReDatas = new byte[ComDevice.BytesToRead];
             ComDevice.Read(ReDatas, 0, ReDatas.Length);//读取数据
+            DataReceived(this, ReDatas);//输出数据
         }
 
         /// <summary>
