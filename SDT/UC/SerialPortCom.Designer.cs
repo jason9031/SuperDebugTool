@@ -46,7 +46,7 @@
             // SP_ComList
             // 
             this.SP_ComList.FormattingEnabled = true;
-            this.SP_ComList.Location = new System.Drawing.Point(48, 3);
+            this.SP_ComList.Location = new System.Drawing.Point(48, 8);
             this.SP_ComList.Name = "SP_ComList";
             this.SP_ComList.Size = new System.Drawing.Size(79, 20);
             this.SP_ComList.TabIndex = 0;
@@ -67,7 +67,7 @@
             "56000",
             "57600",
             "115200"});
-            this.SP_BaudRate.Location = new System.Drawing.Point(48, 29);
+            this.SP_BaudRate.Location = new System.Drawing.Point(48, 36);
             this.SP_BaudRate.Name = "SP_BaudRate";
             this.SP_BaudRate.Size = new System.Drawing.Size(79, 20);
             this.SP_BaudRate.TabIndex = 1;
@@ -81,7 +81,7 @@
             "Even",
             "Mark",
             "Space"});
-            this.SP_Parity.Location = new System.Drawing.Point(48, 55);
+            this.SP_Parity.Location = new System.Drawing.Point(48, 62);
             this.SP_Parity.Name = "SP_Parity";
             this.SP_Parity.Size = new System.Drawing.Size(79, 20);
             this.SP_Parity.TabIndex = 1;
@@ -93,7 +93,7 @@
             "8",
             "7",
             "6"});
-            this.SP_DataBits.Location = new System.Drawing.Point(48, 81);
+            this.SP_DataBits.Location = new System.Drawing.Point(48, 95);
             this.SP_DataBits.Name = "SP_DataBits";
             this.SP_DataBits.Size = new System.Drawing.Size(79, 20);
             this.SP_DataBits.TabIndex = 1;
@@ -104,7 +104,7 @@
             this.SP_StopBits.Items.AddRange(new object[] {
             "1",
             "2"});
-            this.SP_StopBits.Location = new System.Drawing.Point(48, 107);
+            this.SP_StopBits.Location = new System.Drawing.Point(48, 126);
             this.SP_StopBits.Name = "SP_StopBits";
             this.SP_StopBits.Size = new System.Drawing.Size(79, 20);
             this.SP_StopBits.TabIndex = 1;
@@ -112,16 +112,16 @@
             // lb_SP_Com
             // 
             this.lb_SP_Com.AutoSize = true;
-            this.lb_SP_Com.Location = new System.Drawing.Point(3, 11);
+            this.lb_SP_Com.Location = new System.Drawing.Point(3, 16);
             this.lb_SP_Com.Name = "lb_SP_Com";
-            this.lb_SP_Com.Size = new System.Drawing.Size(29, 12);
+            this.lb_SP_Com.Size = new System.Drawing.Size(35, 12);
             this.lb_SP_Com.TabIndex = 2;
-            this.lb_SP_Com.Text = "串口";
+            this.lb_SP_Com.Text = "串 口";
             // 
             // lb_SP_BaudRate
             // 
             this.lb_SP_BaudRate.AutoSize = true;
-            this.lb_SP_BaudRate.Location = new System.Drawing.Point(1, 36);
+            this.lb_SP_BaudRate.Location = new System.Drawing.Point(1, 39);
             this.lb_SP_BaudRate.Name = "lb_SP_BaudRate";
             this.lb_SP_BaudRate.Size = new System.Drawing.Size(41, 12);
             this.lb_SP_BaudRate.TabIndex = 3;
@@ -130,7 +130,7 @@
             // lb_SP_Parity
             // 
             this.lb_SP_Parity.AutoSize = true;
-            this.lb_SP_Parity.Location = new System.Drawing.Point(3, 62);
+            this.lb_SP_Parity.Location = new System.Drawing.Point(1, 70);
             this.lb_SP_Parity.Name = "lb_SP_Parity";
             this.lb_SP_Parity.Size = new System.Drawing.Size(41, 12);
             this.lb_SP_Parity.TabIndex = 4;
@@ -139,7 +139,7 @@
             // lb_SP_DataBits
             // 
             this.lb_SP_DataBits.AutoSize = true;
-            this.lb_SP_DataBits.Location = new System.Drawing.Point(3, 88);
+            this.lb_SP_DataBits.Location = new System.Drawing.Point(3, 103);
             this.lb_SP_DataBits.Name = "lb_SP_DataBits";
             this.lb_SP_DataBits.Size = new System.Drawing.Size(41, 12);
             this.lb_SP_DataBits.TabIndex = 5;
@@ -148,7 +148,7 @@
             // lb_SP_StopBits
             // 
             this.lb_SP_StopBits.AutoSize = true;
-            this.lb_SP_StopBits.Location = new System.Drawing.Point(3, 114);
+            this.lb_SP_StopBits.Location = new System.Drawing.Point(3, 129);
             this.lb_SP_StopBits.Name = "lb_SP_StopBits";
             this.lb_SP_StopBits.Size = new System.Drawing.Size(41, 12);
             this.lb_SP_StopBits.TabIndex = 6;
@@ -156,7 +156,7 @@
             // 
             // SP_btn
             // 
-            this.SP_btn.Location = new System.Drawing.Point(48, 135);
+            this.SP_btn.Location = new System.Drawing.Point(48, 161);
             this.SP_btn.Name = "SP_btn";
             this.SP_btn.Size = new System.Drawing.Size(75, 38);
             this.SP_btn.TabIndex = 7;
@@ -167,7 +167,7 @@
             // SP_pictureBox
             // 
             this.SP_pictureBox.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.SP_pictureBox.Location = new System.Drawing.Point(5, 135);
+            this.SP_pictureBox.Location = new System.Drawing.Point(5, 161);
             this.SP_pictureBox.Name = "SP_pictureBox";
             this.SP_pictureBox.Size = new System.Drawing.Size(39, 38);
             this.SP_pictureBox.TabIndex = 8;
@@ -190,7 +190,7 @@
             this.Controls.Add(this.SP_BaudRate);
             this.Controls.Add(this.SP_ComList);
             this.Name = "SerialPortCom";
-            this.Size = new System.Drawing.Size(135, 184);
+            this.Size = new System.Drawing.Size(135, 217);
             ((System.ComponentModel.ISupportInitialize)(this.SP_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

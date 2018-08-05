@@ -48,19 +48,20 @@ namespace ZXBC.UC
         private void SP_btn_Click(object sender, EventArgs e)
         {
             if (ComDevice.IsOpen == false)
-            {
-                ComDevice.PortName = SP_ComList.SelectedItem.ToString();
-                ComDevice.BaudRate = Convert.ToInt32(SP_BaudRate.SelectedItem.ToString());
-                ComDevice.Parity = (Parity)Convert.ToInt32(SP_Parity.SelectedIndex.ToString());
-                ComDevice.DataBits = Convert.ToInt32(SP_DataBits.SelectedItem.ToString());
-                ComDevice.StopBits = (StopBits)Convert.ToInt32(SP_StopBits.SelectedItem.ToString());
+            { 
                 try
                 {
+                    ComDevice.PortName = SP_ComList.SelectedItem.ToString();
+                    ComDevice.BaudRate = Convert.ToInt32(SP_BaudRate.SelectedItem.ToString());
+                    ComDevice.Parity = (Parity)Convert.ToInt32(SP_Parity.SelectedIndex.ToString());
+                    ComDevice.DataBits = Convert.ToInt32(SP_DataBits.SelectedItem.ToString());
+                    ComDevice.StopBits = (StopBits)Convert.ToInt32(SP_StopBits.SelectedItem.ToString());
                     ComDevice.Open();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(" 串口打开错误 ","错误");
                     return;
                 }
                 SP_btn.Text = "关闭串口";
@@ -74,7 +75,8 @@ namespace ZXBC.UC
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //MessageBox.Show(ex.Message, "错误", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(" 串口关闭错误 ", "错误");
                 }
                 SP_btn.Text = "打开串口";
                 SP_pictureBox.BackgroundImage = Resource.picture.SP_Redlight;

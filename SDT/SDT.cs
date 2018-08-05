@@ -16,16 +16,8 @@ namespace SDT
         public Form1()
         {
             InitializeComponent();
-            this.dataSend2.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.DataSender_EventDataSend);
-            this.serialPortCom2.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.Configer_DataReceived);
-        }
-        private bool DataSender_EventDataSend(byte[] data)
-        {
-            return serialPortCom2.SendData(data);
-        }
-        private void Configer_DataReceived(object sender, byte[] data)
-        {
-            dateReceive2.AddData(data);
+            //this.dataSend2.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.DataSender_EventDataSend);
+            //this.serialPortCom2.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.Configer_DataReceived);
         }
     }
 }

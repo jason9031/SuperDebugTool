@@ -155,6 +155,12 @@
     <Compile Include="Lib\BytesCheck.cs" />
     <Compile Include="Lib\CMD.cs" />
     <Compile Include="Lib\ZxbcEvent.cs" />
+    <Compile Include="PartPanl\SerialPortComPanl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\SerialPortComPanl.Designer.cs">
+      <DependentUpon>SerialPortComPanl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resource\picture.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -192,6 +198,9 @@
     <Compile Include="UserForm\CmdForm.Designer.cs">
       <DependentUpon>CmdForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PartPanl\SerialPortComPanl.resx">
+      <DependentUpon>SerialPortComPanl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -239,6 +248,7 @@
     <None Include="Resource\SP_Greenlight.png" />
     <Content Include="UC\readme.txt" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

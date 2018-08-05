@@ -28,45 +28,86 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.serialPortCom2 = new ZXBC.UC.SerialPortCom();
-            this.dataSend2 = new ZXBC.UC.DataSend();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.serialPortComPanl1 = new ZXBC.PartPanl.SerialPortComPanl();
             this.dateReceive1 = new ZXBC.UC.DateReceive();
             this.dataSend1 = new ZXBC.UC.DataSend();
             this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
-            this.dateReceive2 = new ZXBC.UC.DateReceive();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // serialPortCom2
+            // tabControl1
             // 
-            this.serialPortCom2.Location = new System.Drawing.Point(27, 27);
-            this.serialPortCom2.Name = "serialPortCom2";
-            this.serialPortCom2.Size = new System.Drawing.Size(135, 184);
-            this.serialPortCom2.TabIndex = 1;
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Location = new System.Drawing.Point(3, 24);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(895, 539);
+            this.tabControl1.TabIndex = 0;
             // 
-            // dataSend2
+            // tabPage1
             // 
-            this.dataSend2.Location = new System.Drawing.Point(236, 12);
-            this.dataSend2.Name = "dataSend2";
-            this.dataSend2.Size = new System.Drawing.Size(542, 217);
-            this.dataSend2.TabIndex = 0;
+            this.tabPage1.Controls.Add(this.serialPortComPanl1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(887, 513);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "串口";
+            this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // dateReceive2
+            // tabPage2
             // 
-            this.dateReceive2.Location = new System.Drawing.Point(47, 246);
-            this.dateReceive2.Name = "dateReceive2";
-            this.dateReceive2.Size = new System.Drawing.Size(498, 264);
-            this.dateReceive2.TabIndex = 2;
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(887, 513);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // serialPortComPanl1
+            // 
+            this.serialPortComPanl1.Location = new System.Drawing.Point(0, 0);
+            this.serialPortComPanl1.Name = "serialPortComPanl1";
+            this.serialPortComPanl1.Size = new System.Drawing.Size(805, 493);
+            this.serialPortComPanl1.TabIndex = 0;
+            // 
+            // dateReceive1
+            // 
+            this.dateReceive1.Location = new System.Drawing.Point(0, 0);
+            this.dateReceive1.Name = "dateReceive1";
+            this.dateReceive1.Size = new System.Drawing.Size(498, 264);
+            this.dateReceive1.TabIndex = 0;
+            // 
+            // dataSend1
+            // 
+            this.dataSend1.Location = new System.Drawing.Point(0, 0);
+            this.dataSend1.Name = "dataSend1";
+            this.dataSend1.Size = new System.Drawing.Size(542, 217);
+            this.dataSend1.TabIndex = 0;
+            // 
+            // serialPortCom1
+            // 
+            this.serialPortCom1.Location = new System.Drawing.Point(0, 0);
+            this.serialPortCom1.Name = "serialPortCom1";
+            this.serialPortCom1.Size = new System.Drawing.Size(135, 184);
+            this.serialPortCom1.TabIndex = 0;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(836, 546);
-            this.Controls.Add(this.dateReceive2);
-            this.Controls.Add(this.serialPortCom2);
-            this.Controls.Add(this.dataSend2);
+            this.ClientSize = new System.Drawing.Size(920, 575);
+            this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -76,9 +117,10 @@
         private ZXBC.UC.SerialPortCom serialPortCom1;
         private ZXBC.UC.DataSend dataSend1;
         private ZXBC.UC.DateReceive dateReceive1;
-        private ZXBC.UC.DataSend dataSend2;
-        private ZXBC.UC.SerialPortCom serialPortCom2;
-        private ZXBC.UC.DateReceive dateReceive2;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private ZXBC.PartPanl.SerialPortComPanl serialPortComPanl1;
     }
 }
 

@@ -87,7 +87,7 @@
             this.DR_textBox.Name = "DR_textBox";
             this.DR_textBox.ReadOnly = true;
             this.DR_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DR_textBox.Size = new System.Drawing.Size(477, 212);
+            this.DR_textBox.Size = new System.Drawing.Size(789, 212);
             this.DR_textBox.TabIndex = 3;
             // 
             // DR_CMS
@@ -153,7 +153,7 @@
             // 
             this.DR_mes_lb.AutoSize = true;
             this.DR_mes_lb.ForeColor = System.Drawing.Color.Red;
-            this.DR_mes_lb.Location = new System.Drawing.Point(364, 249);
+            this.DR_mes_lb.Location = new System.Drawing.Point(638, 249);
             this.DR_mes_lb.Name = "DR_mes_lb";
             this.DR_mes_lb.Size = new System.Drawing.Size(131, 12);
             this.DR_mes_lb.TabIndex = 6;
@@ -183,7 +183,7 @@
             this.Controls.Add(this.DR_Hex_rB);
             this.Controls.Add(this.DR_AutoLine_chB);
             this.Name = "DateReceive";
-            this.Size = new System.Drawing.Size(498, 264);
+            this.Size = new System.Drawing.Size(796, 264);
             this.DR_CMS.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
