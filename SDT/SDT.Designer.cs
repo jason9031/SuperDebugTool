@@ -30,23 +30,25 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
             this.serialPortComPanl1 = new ZXBC.PartPanl.SerialPortComPanl();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tcpClientPanl1 = new ZXBC.PartPanl.TCPClientPanl();
             this.dateReceive1 = new ZXBC.UC.DateReceive();
             this.dataSend1 = new ZXBC.UC.DataSend();
             this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(3, 24);
+            this.tabControl1.Location = new System.Drawing.Point(1, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(895, 539);
+            this.tabControl1.Size = new System.Drawing.Size(907, 554);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -60,22 +62,30 @@
             this.tabPage1.Text = "串口";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(887, 513);
-            this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
-            // 
             // serialPortComPanl1
             // 
             this.serialPortComPanl1.Location = new System.Drawing.Point(0, 0);
             this.serialPortComPanl1.Name = "serialPortComPanl1";
             this.serialPortComPanl1.Size = new System.Drawing.Size(805, 493);
             this.serialPortComPanl1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.tcpClientPanl1);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(899, 528);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "TCPClient";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tcpClientPanl1
+            // 
+            this.tcpClientPanl1.Location = new System.Drawing.Point(0, 6);
+            this.tcpClientPanl1.Name = "tcpClientPanl1";
+            this.tcpClientPanl1.Size = new System.Drawing.Size(852, 522);
+            this.tcpClientPanl1.TabIndex = 0;
             // 
             // dateReceive1
             // 
@@ -102,12 +112,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(920, 575);
+            this.ClientSize = new System.Drawing.Size(920, 590);
             this.Controls.Add(this.tabControl1);
             this.Name = "Form1";
             this.Text = "Form1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
+            this.tabPage2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -121,6 +132,7 @@
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private ZXBC.PartPanl.SerialPortComPanl serialPortComPanl1;
+        private ZXBC.PartPanl.TCPClientPanl tcpClientPanl1;
     }
 }
 

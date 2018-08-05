@@ -154,12 +154,19 @@
     </Compile>
     <Compile Include="Lib\BytesCheck.cs" />
     <Compile Include="Lib\CMD.cs" />
+    <Compile Include="Lib\TCPClient.cs" />
     <Compile Include="Lib\ZxbcEvent.cs" />
     <Compile Include="PartPanl\SerialPortComPanl.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="PartPanl\SerialPortComPanl.Designer.cs">
       <DependentUpon>SerialPortComPanl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartPanl\TCPClientPanl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\TCPClientPanl.Designer.cs">
+      <DependentUpon>TCPClientPanl.cs</DependentUpon>
     </Compile>
     <Compile Include="Resource\picture.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -192,6 +199,18 @@
     <Compile Include="UC\SerialPortCom.Designer.cs">
       <DependentUpon>SerialPortCom.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\TabDataReceive.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\TabDataReceive.Designer.cs">
+      <DependentUpon>TabDataReceive.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\TCPClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\TCPClient.Designer.cs">
+      <DependentUpon>TCPClient.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm\CmdForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -200,6 +219,9 @@
     </Compile>
     <EmbeddedResource Include="PartPanl\SerialPortComPanl.resx">
       <DependentUpon>SerialPortComPanl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartPanl\TCPClientPanl.resx">
+      <DependentUpon>TCPClientPanl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -226,6 +248,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\SerialPortCom.resx">
       <DependentUpon>SerialPortCom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\TabDataReceive.resx">
+      <DependentUpon>TabDataReceive.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\TCPClient.resx">
+      <DependentUpon>TCPClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm\CmdForm.resx">
       <DependentUpon>CmdForm.cs</DependentUpon>
