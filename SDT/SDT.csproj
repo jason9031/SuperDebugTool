@@ -168,6 +168,12 @@
     <Compile Include="PartPanl\TCPClientPanl.Designer.cs">
       <DependentUpon>TCPClientPanl.cs</DependentUpon>
     </Compile>
+    <Compile Include="PartPanl\TCPSeverPanl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\TCPSeverPanl.Designer.cs">
+      <DependentUpon>TCPSeverPanl.cs</DependentUpon>
+    </Compile>
     <Compile Include="Resource\picture.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -211,6 +217,12 @@
     <Compile Include="UC\TCPClient.Designer.cs">
       <DependentUpon>TCPClient.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\TCPSever.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\TCPSever.Designer.cs">
+      <DependentUpon>TCPSever.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm\CmdForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -222,6 +234,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PartPanl\TCPClientPanl.resx">
       <DependentUpon>TCPClientPanl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartPanl\TCPSeverPanl.resx">
+      <DependentUpon>TCPSeverPanl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -254,6 +269,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\TCPClient.resx">
       <DependentUpon>TCPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\TCPSever.resx">
+      <DependentUpon>TCPSever.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm\CmdForm.resx">
       <DependentUpon>CmdForm.cs</DependentUpon>

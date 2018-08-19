@@ -36,15 +36,19 @@
             this.dateReceive1 = new ZXBC.UC.DateReceive();
             this.dataSend1 = new ZXBC.UC.DataSend();
             this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.tcpSeverPanl1 = new ZXBC.PartPanl.TCPSeverPanl();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(1, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -57,7 +61,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(887, 513);
+            this.tabPage1.Size = new System.Drawing.Size(899, 528);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "串口";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -108,6 +112,24 @@
             this.serialPortCom1.Size = new System.Drawing.Size(135, 184);
             this.serialPortCom1.TabIndex = 0;
             // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.tcpSeverPanl1);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(899, 528);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "TCPSever";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // tcpSeverPanl1
+            // 
+            this.tcpSeverPanl1.Location = new System.Drawing.Point(7, 6);
+            this.tcpSeverPanl1.Name = "tcpSeverPanl1";
+            this.tcpSeverPanl1.Size = new System.Drawing.Size(895, 549);
+            this.tcpSeverPanl1.TabIndex = 0;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -119,6 +141,7 @@
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -133,6 +156,8 @@
         private System.Windows.Forms.TabPage tabPage2;
         private ZXBC.PartPanl.SerialPortComPanl serialPortComPanl1;
         private ZXBC.PartPanl.TCPClientPanl tcpClientPanl1;
+        private System.Windows.Forms.TabPage tabPage3;
+        private ZXBC.PartPanl.TCPSeverPanl tcpSeverPanl1;
     }
 }
 
