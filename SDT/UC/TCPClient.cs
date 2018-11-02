@@ -127,7 +127,7 @@ namespace ZXBC.UC
                     ZXBC_TCPClient selClient = (ZXBC_TCPClient)TCPClient_Connect_listBox.SelectedItems[i];
                     try
                     {
-                        selClient.NetWork.GetStream().Write(data, 0, data.Length);
+                        selClient.NetWork.GetStream().Write(data, 0, 1024);
                     }
                     catch (Exception ex)
                     {

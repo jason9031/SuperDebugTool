@@ -155,6 +155,7 @@
     <Compile Include="Lib\BytesCheck.cs" />
     <Compile Include="Lib\CMD.cs" />
     <Compile Include="Lib\TCPClient.cs" />
+    <Compile Include="Lib\UDPClient.cs" />
     <Compile Include="Lib\ZxbcEvent.cs" />
     <Compile Include="PartPanl\SerialPortComPanl.cs">
       <SubType>UserControl</SubType>
@@ -173,6 +174,18 @@
     </Compile>
     <Compile Include="PartPanl\TCPSeverPanl.Designer.cs">
       <DependentUpon>TCPSeverPanl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartPanl\UDPClientPanl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\UDPClientPanl.Designer.cs">
+      <DependentUpon>UDPClientPanl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PartPanl\UDPSeverPanl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\UDPSeverPanl.Designer.cs">
+      <DependentUpon>UDPSeverPanl.cs</DependentUpon>
     </Compile>
     <Compile Include="Resource\picture.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -223,6 +236,18 @@
     <Compile Include="UC\TCPSever.Designer.cs">
       <DependentUpon>TCPSever.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UDPClient.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UDPClient.Designer.cs">
+      <DependentUpon>UDPClient.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UDPSever.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UDPSever.Designer.cs">
+      <DependentUpon>UDPSever.cs</DependentUpon>
+    </Compile>
     <Compile Include="UserForm\CmdForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -237,6 +262,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PartPanl\TCPSeverPanl.resx">
       <DependentUpon>TCPSeverPanl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartPanl\UDPClientPanl.resx">
+      <DependentUpon>UDPClientPanl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PartPanl\UDPSeverPanl.resx">
+      <DependentUpon>UDPSeverPanl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -272,6 +303,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\TCPSever.resx">
       <DependentUpon>TCPSever.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UDPClient.resx">
+      <DependentUpon>UDPClient.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UDPSever.resx">
+      <DependentUpon>UDPSever.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserForm\CmdForm.resx">
       <DependentUpon>CmdForm.cs</DependentUpon>
