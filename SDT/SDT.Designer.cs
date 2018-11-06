@@ -38,16 +38,19 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.udpSeverPanl1 = new ZXBC.PartPanl.UDPSeverPanl();
             this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.udpClientPanl1 = new ZXBC.PartPanl.UDPClientPanl();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
             this.dateReceive1 = new ZXBC.UC.DateReceive();
             this.dataSend1 = new ZXBC.UC.DataSend();
             this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
-            this.udpClientPanl1 = new ZXBC.PartPanl.UDPClientPanl();
+            this.pingPanel1 = new ZXBC.PartPanl.PingPanel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
             this.tabPage5.SuspendLayout();
+            this.tabPage6.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -57,6 +60,7 @@
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(1, 24);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
@@ -144,6 +148,23 @@
             this.tabPage5.Text = "UDPClient";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
+            // udpClientPanl1
+            // 
+            this.udpClientPanl1.Location = new System.Drawing.Point(3, 3);
+            this.udpClientPanl1.Name = "udpClientPanl1";
+            this.udpClientPanl1.Size = new System.Drawing.Size(900, 504);
+            this.udpClientPanl1.TabIndex = 0;
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.Controls.Add(this.pingPanel1);
+            this.tabPage6.Location = new System.Drawing.Point(4, 22);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Size = new System.Drawing.Size(899, 575);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "Ping";
+            this.tabPage6.UseVisualStyleBackColor = true;
+            // 
             // dateReceive1
             // 
             this.dateReceive1.Location = new System.Drawing.Point(0, 0);
@@ -165,12 +186,12 @@
             this.serialPortCom1.Size = new System.Drawing.Size(135, 184);
             this.serialPortCom1.TabIndex = 0;
             // 
-            // udpClientPanl1
+            // pingPanel1
             // 
-            this.udpClientPanl1.Location = new System.Drawing.Point(3, 21);
-            this.udpClientPanl1.Name = "udpClientPanl1";
-            this.udpClientPanl1.Size = new System.Drawing.Size(900, 504);
-            this.udpClientPanl1.TabIndex = 0;
+            this.pingPanel1.Location = new System.Drawing.Point(7, 3);
+            this.pingPanel1.Name = "pingPanel1";
+            this.pingPanel1.Size = new System.Drawing.Size(738, 519);
+            this.pingPanel1.TabIndex = 0;
             // 
             // Form1
             // 
@@ -186,6 +207,7 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage4.ResumeLayout(false);
             this.tabPage5.ResumeLayout(false);
+            this.tabPage6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -206,6 +228,8 @@
         private ZXBC.PartPanl.UDPSeverPanl udpSeverPanl1;
         private System.Windows.Forms.TabPage tabPage5;
         private ZXBC.PartPanl.UDPClientPanl udpClientPanl1;
+        private System.Windows.Forms.TabPage tabPage6;
+        private ZXBC.PartPanl.PingPanel pingPanel1;
     }
 }
 

@@ -152,11 +152,23 @@
     <Compile Include="CP\BytesBox.Designer.cs">
       <DependentUpon>BytesBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="CP\CMDTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CP\CMDTextBox.Designer.cs">
+      <DependentUpon>CMDTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="Lib\BytesCheck.cs" />
     <Compile Include="Lib\CMD.cs" />
     <Compile Include="Lib\TCPClient.cs" />
     <Compile Include="Lib\UDPClient.cs" />
     <Compile Include="Lib\ZxbcEvent.cs" />
+    <Compile Include="PartPanl\PingPanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\PingPanel.Designer.cs">
+      <DependentUpon>PingPanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="PartPanl\SerialPortComPanl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -254,6 +266,9 @@
     <Compile Include="UserForm\CmdForm.Designer.cs">
       <DependentUpon>CmdForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="PartPanl\PingPanel.resx">
+      <DependentUpon>PingPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="PartPanl\SerialPortComPanl.resx">
       <DependentUpon>SerialPortComPanl.cs</DependentUpon>
     </EmbeddedResource>
