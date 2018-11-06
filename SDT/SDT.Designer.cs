@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.serialPortComPanl1 = new ZXBC.PartPanl.SerialPortComPanl();
@@ -40,10 +41,10 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.udpClientPanl1 = new ZXBC.PartPanl.UDPClientPanl();
             this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.pingPanel1 = new ZXBC.PartPanl.PingPanel();
             this.dateReceive1 = new ZXBC.UC.DateReceive();
             this.dataSend1 = new ZXBC.UC.DataSend();
             this.serialPortCom1 = new ZXBC.UC.SerialPortCom();
-            this.pingPanel1 = new ZXBC.PartPanl.PingPanel();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -61,10 +62,10 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(1, 24);
+            this.tabControl1.Location = new System.Drawing.Point(12, 29);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(907, 601);
+            this.tabControl1.Size = new System.Drawing.Size(895, 596);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
@@ -73,7 +74,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(899, 575);
+            this.tabPage1.Size = new System.Drawing.Size(887, 570);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "串口";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -82,7 +83,7 @@
             // 
             this.serialPortComPanl1.Location = new System.Drawing.Point(0, 0);
             this.serialPortComPanl1.Name = "serialPortComPanl1";
-            this.serialPortComPanl1.Size = new System.Drawing.Size(805, 493);
+            this.serialPortComPanl1.Size = new System.Drawing.Size(892, 574);
             this.serialPortComPanl1.TabIndex = 0;
             // 
             // tabPage2
@@ -91,16 +92,16 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(899, 575);
+            this.tabPage2.Size = new System.Drawing.Size(887, 570);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "TCPClient";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // tcpClientPanl1
             // 
-            this.tcpClientPanl1.Location = new System.Drawing.Point(0, 6);
+            this.tcpClientPanl1.Location = new System.Drawing.Point(0, 0);
             this.tcpClientPanl1.Name = "tcpClientPanl1";
-            this.tcpClientPanl1.Size = new System.Drawing.Size(852, 522);
+            this.tcpClientPanl1.Size = new System.Drawing.Size(892, 574);
             this.tcpClientPanl1.TabIndex = 0;
             // 
             // tabPage3
@@ -109,16 +110,16 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(899, 575);
+            this.tabPage3.Size = new System.Drawing.Size(887, 570);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "TCPSever";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // tcpSeverPanl1
             // 
-            this.tcpSeverPanl1.Location = new System.Drawing.Point(7, 6);
+            this.tcpSeverPanl1.Location = new System.Drawing.Point(0, 0);
             this.tcpSeverPanl1.Name = "tcpSeverPanl1";
-            this.tcpSeverPanl1.Size = new System.Drawing.Size(895, 549);
+            this.tcpSeverPanl1.Size = new System.Drawing.Size(892, 574);
             this.tcpSeverPanl1.TabIndex = 0;
             // 
             // tabPage4
@@ -126,14 +127,14 @@
             this.tabPage4.Controls.Add(this.udpSeverPanl1);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(899, 575);
+            this.tabPage4.Size = new System.Drawing.Size(887, 570);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "UDPSever";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // udpSeverPanl1
             // 
-            this.udpSeverPanl1.Location = new System.Drawing.Point(3, 3);
+            this.udpSeverPanl1.Location = new System.Drawing.Point(0, 0);
             this.udpSeverPanl1.Name = "udpSeverPanl1";
             this.udpSeverPanl1.Size = new System.Drawing.Size(906, 572);
             this.udpSeverPanl1.TabIndex = 0;
@@ -143,16 +144,16 @@
             this.tabPage5.Controls.Add(this.udpClientPanl1);
             this.tabPage5.Location = new System.Drawing.Point(4, 22);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(899, 575);
+            this.tabPage5.Size = new System.Drawing.Size(887, 570);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "UDPClient";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // udpClientPanl1
             // 
-            this.udpClientPanl1.Location = new System.Drawing.Point(3, 3);
+            this.udpClientPanl1.Location = new System.Drawing.Point(0, 0);
             this.udpClientPanl1.Name = "udpClientPanl1";
-            this.udpClientPanl1.Size = new System.Drawing.Size(900, 504);
+            this.udpClientPanl1.Size = new System.Drawing.Size(892, 574);
             this.udpClientPanl1.TabIndex = 0;
             // 
             // tabPage6
@@ -160,10 +161,17 @@
             this.tabPage6.Controls.Add(this.pingPanel1);
             this.tabPage6.Location = new System.Drawing.Point(4, 22);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(899, 575);
+            this.tabPage6.Size = new System.Drawing.Size(887, 570);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "Ping";
             this.tabPage6.UseVisualStyleBackColor = true;
+            // 
+            // pingPanel1
+            // 
+            this.pingPanel1.Location = new System.Drawing.Point(0, 0);
+            this.pingPanel1.Name = "pingPanel1";
+            this.pingPanel1.Size = new System.Drawing.Size(892, 574);
+            this.pingPanel1.TabIndex = 0;
             // 
             // dateReceive1
             // 
@@ -186,21 +194,16 @@
             this.serialPortCom1.Size = new System.Drawing.Size(135, 184);
             this.serialPortCom1.TabIndex = 0;
             // 
-            // pingPanel1
-            // 
-            this.pingPanel1.Location = new System.Drawing.Point(7, 3);
-            this.pingPanel1.Name = "pingPanel1";
-            this.pingPanel1.Size = new System.Drawing.Size(738, 519);
-            this.pingPanel1.TabIndex = 0;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(951, 637);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(917, 637);
             this.Controls.Add(this.tabControl1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Super Debug Tool";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage2.ResumeLayout(false);

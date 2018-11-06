@@ -54,13 +54,13 @@
             // 
             this.UDPClient_IP_textBox.Location = new System.Drawing.Point(51, 11);
             this.UDPClient_IP_textBox.Name = "UDPClient_IP_textBox";
-            this.UDPClient_IP_textBox.Size = new System.Drawing.Size(127, 21);
+            this.UDPClient_IP_textBox.Size = new System.Drawing.Size(116, 21);
             this.UDPClient_IP_textBox.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(15, 55);
+            this.label2.Location = new System.Drawing.Point(3, 53);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(29, 12);
             this.label2.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             this.UDPClient_add_button.Location = new System.Drawing.Point(121, 42);
             this.UDPClient_add_button.Name = "UDPClient_add_button";
-            this.UDPClient_add_button.Size = new System.Drawing.Size(57, 23);
+            this.UDPClient_add_button.Size = new System.Drawing.Size(46, 23);
             this.UDPClient_add_button.TabIndex = 4;
             this.UDPClient_add_button.Text = "添加";
             this.UDPClient_add_button.UseVisualStyleBackColor = true;
@@ -89,7 +89,7 @@
             this.UDPClient_Connect_listBox.ItemHeight = 12;
             this.UDPClient_Connect_listBox.Location = new System.Drawing.Point(5, 71);
             this.UDPClient_Connect_listBox.Name = "UDPClient_Connect_listBox";
-            this.UDPClient_Connect_listBox.Size = new System.Drawing.Size(173, 148);
+            this.UDPClient_Connect_listBox.Size = new System.Drawing.Size(162, 124);
             this.UDPClient_Connect_listBox.TabIndex = 5;
             // 
             // UDPClient_CMS
@@ -102,7 +102,7 @@
             // MS_Delete
             // 
             this.MS_Delete.Name = "MS_Delete";
-            this.MS_Delete.Size = new System.Drawing.Size(152, 22);
+            this.MS_Delete.Size = new System.Drawing.Size(100, 22);
             this.MS_Delete.Text = "删除";
             this.MS_Delete.Click += new System.EventHandler(this.MS_Delete_Click);
             // 
@@ -117,7 +117,7 @@
             this.Controls.Add(this.UDPClient_IP_textBox);
             this.Controls.Add(this.label1);
             this.Name = "UDPClient";
-            this.Size = new System.Drawing.Size(188, 232);
+            this.Size = new System.Drawing.Size(180, 210);
             ((System.ComponentModel.ISupportInitialize)(this.UDPClient_port_numericUpDown)).EndInit();
             this.UDPClient_CMS.ResumeLayout(false);
             this.ResumeLayout(false);

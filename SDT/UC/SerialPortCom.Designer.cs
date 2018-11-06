@@ -48,7 +48,7 @@
             this.SP_ComList.FormattingEnabled = true;
             this.SP_ComList.Location = new System.Drawing.Point(48, 8);
             this.SP_ComList.Name = "SP_ComList";
-            this.SP_ComList.Size = new System.Drawing.Size(79, 20);
+            this.SP_ComList.Size = new System.Drawing.Size(116, 20);
             this.SP_ComList.TabIndex = 0;
             // 
             // SP_BaudRate
@@ -69,7 +69,7 @@
             "115200"});
             this.SP_BaudRate.Location = new System.Drawing.Point(48, 36);
             this.SP_BaudRate.Name = "SP_BaudRate";
-            this.SP_BaudRate.Size = new System.Drawing.Size(79, 20);
+            this.SP_BaudRate.Size = new System.Drawing.Size(116, 20);
             this.SP_BaudRate.TabIndex = 1;
             // 
             // SP_Parity
@@ -83,7 +83,7 @@
             "Space"});
             this.SP_Parity.Location = new System.Drawing.Point(48, 62);
             this.SP_Parity.Name = "SP_Parity";
-            this.SP_Parity.Size = new System.Drawing.Size(79, 20);
+            this.SP_Parity.Size = new System.Drawing.Size(116, 20);
             this.SP_Parity.TabIndex = 1;
             // 
             // SP_DataBits
@@ -95,7 +95,7 @@
             "6"});
             this.SP_DataBits.Location = new System.Drawing.Point(48, 95);
             this.SP_DataBits.Name = "SP_DataBits";
-            this.SP_DataBits.Size = new System.Drawing.Size(79, 20);
+            this.SP_DataBits.Size = new System.Drawing.Size(116, 20);
             this.SP_DataBits.TabIndex = 1;
             // 
             // SP_StopBits
@@ -106,7 +106,7 @@
             "2"});
             this.SP_StopBits.Location = new System.Drawing.Point(48, 126);
             this.SP_StopBits.Name = "SP_StopBits";
-            this.SP_StopBits.Size = new System.Drawing.Size(79, 20);
+            this.SP_StopBits.Size = new System.Drawing.Size(116, 20);
             this.SP_StopBits.TabIndex = 1;
             // 
             // lb_SP_Com
@@ -158,7 +158,7 @@
             // 
             this.SP_btn.Location = new System.Drawing.Point(48, 161);
             this.SP_btn.Name = "SP_btn";
-            this.SP_btn.Size = new System.Drawing.Size(75, 38);
+            this.SP_btn.Size = new System.Drawing.Size(116, 38);
             this.SP_btn.TabIndex = 7;
             this.SP_btn.Text = "打开串口";
             this.SP_btn.UseVisualStyleBackColor = true;
@@ -190,7 +190,7 @@
             this.Controls.Add(this.SP_BaudRate);
             this.Controls.Add(this.SP_ComList);
             this.Name = "SerialPortCom";
-            this.Size = new System.Drawing.Size(135, 217);
+            this.Size = new System.Drawing.Size(180, 210);
             ((System.ComponentModel.ISupportInitialize)(this.SP_pictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

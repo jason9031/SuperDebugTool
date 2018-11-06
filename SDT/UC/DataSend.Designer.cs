@@ -30,8 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DS_dataGridView = new System.Windows.Forms.DataGridView();
             this.IsAutoSend = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.CType = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -78,16 +78,16 @@
             this.DS_dataGridView.Location = new System.Drawing.Point(3, 3);
             this.DS_dataGridView.MultiSelect = false;
             this.DS_dataGridView.Name = "DS_dataGridView";
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            this.DS_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("宋体", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            this.DS_dataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
             this.DS_dataGridView.RowHeadersVisible = false;
             this.DS_dataGridView.RowTemplate.Height = 23;
             this.DS_dataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DS_dataGridView.Size = new System.Drawing.Size(535, 176);
+            this.DS_dataGridView.Size = new System.Drawing.Size(705, 199);
             this.DS_dataGridView.TabIndex = 0;
             this.DS_dataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DS_dataGridView_CellContentClick);
             // 
@@ -101,9 +101,9 @@
             // CType
             // 
             this.CType.DataPropertyName = "ContentTypeName";
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.CType.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.CType.DefaultCellStyle = dataGridViewCellStyle7;
             this.CType.HeaderText = "类型";
             this.CType.Name = "CType";
             this.CType.ReadOnly = true;
@@ -161,7 +161,7 @@
             // DS_AutoSend_btn
             // 
             this.DS_AutoSend_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.DS_AutoSend_btn.Location = new System.Drawing.Point(3, 185);
+            this.DS_AutoSend_btn.Location = new System.Drawing.Point(3, 208);
             this.DS_AutoSend_btn.Name = "DS_AutoSend_btn";
             this.DS_AutoSend_btn.Size = new System.Drawing.Size(83, 28);
             this.DS_AutoSend_btn.TabIndex = 2;
@@ -173,7 +173,7 @@
             // 
             this.lb_sd_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_sd_time.AutoSize = true;
-            this.lb_sd_time.Location = new System.Drawing.Point(104, 193);
+            this.lb_sd_time.Location = new System.Drawing.Point(104, 216);
             this.lb_sd_time.Name = "lb_sd_time";
             this.lb_sd_time.Size = new System.Drawing.Size(65, 12);
             this.lb_sd_time.TabIndex = 3;
@@ -182,7 +182,7 @@
             // SD_time
             // 
             this.SD_time.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.SD_time.Location = new System.Drawing.Point(175, 185);
+            this.SD_time.Location = new System.Drawing.Point(175, 208);
             this.SD_time.Maximum = new decimal(new int[] {
             1000000,
             0,
@@ -201,7 +201,7 @@
             // 
             this.lb_time_unit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_time_unit.AutoSize = true;
-            this.lb_time_unit.Location = new System.Drawing.Point(243, 193);
+            this.lb_time_unit.Location = new System.Drawing.Point(243, 216);
             this.lb_time_unit.Name = "lb_time_unit";
             this.lb_time_unit.Size = new System.Drawing.Size(29, 12);
             this.lb_time_unit.TabIndex = 5;
@@ -211,7 +211,7 @@
             // 
             this.lb_sd_num.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.lb_sd_num.AutoSize = true;
-            this.lb_sd_num.Location = new System.Drawing.Point(290, 193);
+            this.lb_sd_num.Location = new System.Drawing.Point(290, 216);
             this.lb_sd_num.Name = "lb_sd_num";
             this.lb_sd_num.Size = new System.Drawing.Size(77, 12);
             this.lb_sd_num.TabIndex = 6;
@@ -220,7 +220,7 @@
             // linkLb_sd_num
             // 
             this.linkLb_sd_num.AutoSize = true;
-            this.linkLb_sd_num.Location = new System.Drawing.Point(360, 192);
+            this.linkLb_sd_num.Location = new System.Drawing.Point(370, 190);
             this.linkLb_sd_num.Name = "linkLb_sd_num";
             this.linkLb_sd_num.Size = new System.Drawing.Size(11, 12);
             this.linkLb_sd_num.TabIndex = 7;
@@ -240,7 +240,7 @@
             this.Controls.Add(this.DS_AutoSend_btn);
             this.Controls.Add(this.DS_dataGridView);
             this.Name = "DataSend";
-            this.Size = new System.Drawing.Size(542, 217);
+            this.Size = new System.Drawing.Size(712, 240);
             ((System.ComponentModel.ISupportInitialize)(this.DS_dataGridView)).EndInit();
             this.DS_CMS.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.SD_time)).EndInit();

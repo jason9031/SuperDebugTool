@@ -36,24 +36,24 @@
             // 
             // TCPClient_tabDataReceive
             // 
-            this.TCPClient_tabDataReceive.Location = new System.Drawing.Point(3, 214);
+            this.TCPClient_tabDataReceive.Location = new System.Drawing.Point(0, 210);
             this.TCPClient_tabDataReceive.Name = "TCPClient_tabDataReceive";
-            this.TCPClient_tabDataReceive.Size = new System.Drawing.Size(843, 336);
+            this.TCPClient_tabDataReceive.Size = new System.Drawing.Size(892, 364);
             this.TCPClient_tabDataReceive.TabIndex = 2;
             // 
             // TCPClient_dataSend
             // 
-            this.TCPClient_dataSend.Location = new System.Drawing.Point(197, 3);
+            this.TCPClient_dataSend.Location = new System.Drawing.Point(180, 0);
             this.TCPClient_dataSend.Name = "TCPClient_dataSend";
-            this.TCPClient_dataSend.Size = new System.Drawing.Size(634, 217);
+            this.TCPClient_dataSend.Size = new System.Drawing.Size(712, 210);
             this.TCPClient_dataSend.TabIndex = 1;
             this.TCPClient_dataSend.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.TCPClient_dataSend_EventDataSend);
             // 
             // TCPClient_Conf
             // 
-            this.TCPClient_Conf.Location = new System.Drawing.Point(3, 3);
+            this.TCPClient_Conf.Location = new System.Drawing.Point(0, 0);
             this.TCPClient_Conf.Name = "TCPClient_Conf";
-            this.TCPClient_Conf.Size = new System.Drawing.Size(177, 234);
+            this.TCPClient_Conf.Size = new System.Drawing.Size(180, 210);
             this.TCPClient_Conf.TabIndex = 0;
             this.TCPClient_Conf.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.TCPClient_Conf_DataReceived);
             // 
@@ -65,7 +65,7 @@
             this.Controls.Add(this.TCPClient_dataSend);
             this.Controls.Add(this.TCPClient_Conf);
             this.Name = "TCPClientPanl";
-            this.Size = new System.Drawing.Size(852, 590);
+            this.Size = new System.Drawing.Size(892, 574);
             this.ResumeLayout(false);
 
         }

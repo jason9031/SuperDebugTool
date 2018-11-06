@@ -66,19 +66,19 @@
             "Any"});
             this.UDPSever_IP_comboBox.Location = new System.Drawing.Point(40, 4);
             this.UDPSever_IP_comboBox.Name = "UDPSever_IP_comboBox";
-            this.UDPSever_IP_comboBox.Size = new System.Drawing.Size(121, 20);
+            this.UDPSever_IP_comboBox.Size = new System.Drawing.Size(130, 20);
             this.UDPSever_IP_comboBox.TabIndex = 2;
             // 
             // UDPClient_Port_numericUpDown
             // 
             this.UDPClient_Port_numericUpDown.Location = new System.Drawing.Point(40, 31);
             this.UDPClient_Port_numericUpDown.Name = "UDPClient_Port_numericUpDown";
-            this.UDPClient_Port_numericUpDown.Size = new System.Drawing.Size(58, 21);
+            this.UDPClient_Port_numericUpDown.Size = new System.Drawing.Size(67, 21);
             this.UDPClient_Port_numericUpDown.TabIndex = 3;
             // 
             // UDPClient_Connect_button
             // 
-            this.UDPClient_Connect_button.Location = new System.Drawing.Point(104, 31);
+            this.UDPClient_Connect_button.Location = new System.Drawing.Point(113, 30);
             this.UDPClient_Connect_button.Name = "UDPClient_Connect_button";
             this.UDPClient_Connect_button.Size = new System.Drawing.Size(57, 23);
             this.UDPClient_Connect_button.TabIndex = 4;
@@ -92,7 +92,7 @@
             this.UDPSever_listBox.ItemHeight = 12;
             this.UDPSever_listBox.Location = new System.Drawing.Point(7, 65);
             this.UDPSever_listBox.Name = "UDPSever_listBox";
-            this.UDPSever_listBox.Size = new System.Drawing.Size(154, 148);
+            this.UDPSever_listBox.Size = new System.Drawing.Size(163, 136);
             this.UDPSever_listBox.TabIndex = 5;
             // 
             // UDPSever_CMS
@@ -105,7 +105,7 @@
             // MS_Delete
             // 
             this.MS_Delete.Name = "MS_Delete";
-            this.MS_Delete.Size = new System.Drawing.Size(152, 22);
+            this.MS_Delete.Size = new System.Drawing.Size(100, 22);
             this.MS_Delete.Text = "删除";
             this.MS_Delete.Click += new System.EventHandler(this.MS_Delete_Click);
             // 
@@ -120,7 +120,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "UDPSever";
-            this.Size = new System.Drawing.Size(177, 221);
+            this.Size = new System.Drawing.Size(180, 210);
             ((System.ComponentModel.ISupportInitialize)(this.UDPClient_Port_numericUpDown)).EndInit();
             this.UDPSever_CMS.ResumeLayout(false);
             this.ResumeLayout(false);

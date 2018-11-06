@@ -109,12 +109,12 @@
             this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.MS_Delete});
             this.contextMenuStrip1.Name = "contextMenuStrip1";
-            this.contextMenuStrip1.Size = new System.Drawing.Size(153, 48);
+            this.contextMenuStrip1.Size = new System.Drawing.Size(125, 26);
             // 
             // MS_Delete
             // 
             this.MS_Delete.Name = "MS_Delete";
-            this.MS_Delete.Size = new System.Drawing.Size(152, 22);
+            this.MS_Delete.Size = new System.Drawing.Size(124, 22);
             this.MS_Delete.Text = "断开连接";
             this.MS_Delete.Click += new System.EventHandler(this.MS_Delete_Click);
             // 
@@ -129,7 +129,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "TCPSever";
-            this.Size = new System.Drawing.Size(185, 208);
+            this.Size = new System.Drawing.Size(180, 210);
             ((System.ComponentModel.ISupportInitialize)(this.TCPSever_nUD)).EndInit();
             this.contextMenuStrip1.ResumeLayout(false);
             this.ResumeLayout(false);

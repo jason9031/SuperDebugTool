@@ -53,7 +53,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 42);
+            this.label2.Location = new System.Drawing.Point(4, 41);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(35, 12);
             this.label2.TabIndex = 1;
@@ -100,7 +100,7 @@
             this.TCPClient_Connect_listBox.ItemHeight = 12;
             this.TCPClient_Connect_listBox.Location = new System.Drawing.Point(6, 69);
             this.TCPClient_Connect_listBox.Name = "TCPClient_Connect_listBox";
-            this.TCPClient_Connect_listBox.Size = new System.Drawing.Size(164, 124);
+            this.TCPClient_Connect_listBox.Size = new System.Drawing.Size(164, 136);
             this.TCPClient_Connect_listBox.TabIndex = 5;
             // 
             // TCPClient_CMS
@@ -128,7 +128,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "TCPClient";
-            this.Size = new System.Drawing.Size(174, 204);
+            this.Size = new System.Drawing.Size(180, 210);
             ((System.ComponentModel.ISupportInitialize)(this.TCPClient_Port_numericUD)).EndInit();
             this.TCPClient_CMS.ResumeLayout(false);
             this.ResumeLayout(false);

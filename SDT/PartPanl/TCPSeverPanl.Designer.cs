@@ -29,33 +29,33 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.TCPSever = new ZXBC.UC.TCPSever();
-            this.TCPSever_dataSend = new ZXBC.UC.DataSend();
             this.TCPSever_tabDataReceive = new ZXBC.UC.TabDataReceive();
+            this.TCPSever_dataSend = new ZXBC.UC.DataSend();
+            this.TCPSever = new ZXBC.UC.TCPSever();
             this.SuspendLayout();
-            // 
-            // TCPSever
-            // 
-            this.TCPSever.Location = new System.Drawing.Point(3, 3);
-            this.TCPSever.Name = "TCPSever";
-            this.TCPSever.Size = new System.Drawing.Size(185, 208);
-            this.TCPSever.TabIndex = 0;
-            this.TCPSever.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.TCPSever_DataReceived);
-            // 
-            // TCPSever_dataSend
-            // 
-            this.TCPSever_dataSend.Location = new System.Drawing.Point(185, 3);
-            this.TCPSever_dataSend.Name = "TCPSever_dataSend";
-            this.TCPSever_dataSend.Size = new System.Drawing.Size(542, 208);
-            this.TCPSever_dataSend.TabIndex = 1;
-            this.TCPSever_dataSend.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.TCPSever_dataSend_EventDataSend);
             // 
             // TCPSever_tabDataReceive
             // 
-            this.TCPSever_tabDataReceive.Location = new System.Drawing.Point(12, 205);
+            this.TCPSever_tabDataReceive.Location = new System.Drawing.Point(0, 210);
             this.TCPSever_tabDataReceive.Name = "TCPSever_tabDataReceive";
-            this.TCPSever_tabDataReceive.Size = new System.Drawing.Size(838, 317);
+            this.TCPSever_tabDataReceive.Size = new System.Drawing.Size(892, 364);
             this.TCPSever_tabDataReceive.TabIndex = 2;
+            // 
+            // TCPSever_dataSend
+            // 
+            this.TCPSever_dataSend.Location = new System.Drawing.Point(180, 0);
+            this.TCPSever_dataSend.Name = "TCPSever_dataSend";
+            this.TCPSever_dataSend.Size = new System.Drawing.Size(712, 210);
+            this.TCPSever_dataSend.TabIndex = 1;
+            this.TCPSever_dataSend.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.TCPSever_dataSend_EventDataSend);
+            // 
+            // TCPSever
+            // 
+            this.TCPSever.Location = new System.Drawing.Point(0, 0);
+            this.TCPSever.Name = "TCPSever";
+            this.TCPSever.Size = new System.Drawing.Size(185, 210);
+            this.TCPSever.TabIndex = 0;
+            this.TCPSever.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.TCPSever_DataReceived);
             // 
             // TCPSeverPanl
             // 
@@ -65,7 +65,7 @@
             this.Controls.Add(this.TCPSever_dataSend);
             this.Controls.Add(this.TCPSever);
             this.Name = "TCPSeverPanl";
-            this.Size = new System.Drawing.Size(895, 549);
+            this.Size = new System.Drawing.Size(892, 574);
             this.ResumeLayout(false);
 
         }

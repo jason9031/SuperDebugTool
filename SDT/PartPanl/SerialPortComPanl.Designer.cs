@@ -35,23 +35,23 @@
             // 
             // Com_serialPortCom
             // 
-            this.Com_serialPortCom.Location = new System.Drawing.Point(3, 3);
+            this.Com_serialPortCom.Location = new System.Drawing.Point(0, 0);
             this.Com_serialPortCom.Name = "Com_serialPortCom";
-            this.Com_serialPortCom.Size = new System.Drawing.Size(135, 217);
+            this.Com_serialPortCom.Size = new System.Drawing.Size(180, 210);
             this.Com_serialPortCom.TabIndex = 0;
             // 
             // Com_dataSend
             // 
-            this.Com_dataSend.Location = new System.Drawing.Point(144, 3);
+            this.Com_dataSend.Location = new System.Drawing.Point(180, 0);
             this.Com_dataSend.Name = "Com_dataSend";
-            this.Com_dataSend.Size = new System.Drawing.Size(657, 217);
+            this.Com_dataSend.Size = new System.Drawing.Size(712, 210);
             this.Com_dataSend.TabIndex = 1;
             // 
             // Com_dateReceive
             // 
-            this.Com_dateReceive.Location = new System.Drawing.Point(3, 226);
+            this.Com_dateReceive.Location = new System.Drawing.Point(0, 210);
             this.Com_dateReceive.Name = "Com_dateReceive";
-            this.Com_dateReceive.Size = new System.Drawing.Size(798, 281);
+            this.Com_dateReceive.Size = new System.Drawing.Size(892, 364);
             this.Com_dateReceive.TabIndex = 2;
             // 
             // SerialPortComPanl
@@ -62,7 +62,7 @@
             this.Controls.Add(this.Com_dataSend);
             this.Controls.Add(this.Com_serialPortCom);
             this.Name = "SerialPortComPanl";
-            this.Size = new System.Drawing.Size(807, 548);
+            this.Size = new System.Drawing.Size(892, 574);
             this.ResumeLayout(false);
 
         }

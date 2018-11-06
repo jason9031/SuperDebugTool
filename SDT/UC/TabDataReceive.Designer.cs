@@ -71,10 +71,10 @@
             // tabData
             // 
             this.tabData.ContextMenuStrip = this.CMenu;
-            this.tabData.Location = new System.Drawing.Point(3, 3);
+            this.tabData.Location = new System.Drawing.Point(0, 0);
             this.tabData.Name = "tabData";
             this.tabData.SelectedIndex = 0;
-            this.tabData.Size = new System.Drawing.Size(829, 311);
+            this.tabData.Size = new System.Drawing.Size(892, 364);
             this.tabData.TabIndex = 1;
             this.tabData.DoubleClick += new System.EventHandler(this.tabData_DoubleClick);
             // 
@@ -85,7 +85,7 @@
             this.ContextMenuStrip = this.CMenu;
             this.Controls.Add(this.tabData);
             this.Name = "TabDataReceive";
-            this.Size = new System.Drawing.Size(838, 317);
+            this.Size = new System.Drawing.Size(892, 364);
             this.CMenu.ResumeLayout(false);
             this.ResumeLayout(false);
 

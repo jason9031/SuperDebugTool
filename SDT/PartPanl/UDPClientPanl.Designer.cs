@@ -36,25 +36,25 @@
             // 
             // UDPClient
             // 
-            this.UDPClient.Location = new System.Drawing.Point(13, 3);
+            this.UDPClient.Location = new System.Drawing.Point(0, 0);
             this.UDPClient.Name = "UDPClient";
-            this.UDPClient.Size = new System.Drawing.Size(188, 232);
+            this.UDPClient.Size = new System.Drawing.Size(180, 210);
             this.UDPClient.TabIndex = 0;
             this.UDPClient.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.UDPClient_DataReceived);
             // 
             // UDPClient_dataSend
             // 
-            this.UDPClient_dataSend.Location = new System.Drawing.Point(207, 3);
+            this.UDPClient_dataSend.Location = new System.Drawing.Point(180, 0);
             this.UDPClient_dataSend.Name = "UDPClient_dataSend";
-            this.UDPClient_dataSend.Size = new System.Drawing.Size(653, 217);
+            this.UDPClient_dataSend.Size = new System.Drawing.Size(712, 210);
             this.UDPClient_dataSend.TabIndex = 1;
             this.UDPClient_dataSend.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.UDPClient_dataSend_EventDataSend);
             // 
             // UDPClient_tabDataReceive
             // 
-            this.UDPClient_tabDataReceive.Location = new System.Drawing.Point(22, 226);
+            this.UDPClient_tabDataReceive.Location = new System.Drawing.Point(0, 210);
             this.UDPClient_tabDataReceive.Name = "UDPClient_tabDataReceive";
-            this.UDPClient_tabDataReceive.Size = new System.Drawing.Size(838, 265);
+            this.UDPClient_tabDataReceive.Size = new System.Drawing.Size(892, 364);
             this.UDPClient_tabDataReceive.TabIndex = 2;
             // 
             // UDPClientPanl
@@ -65,7 +65,7 @@
             this.Controls.Add(this.UDPClient_dataSend);
             this.Controls.Add(this.UDPClient);
             this.Name = "UDPClientPanl";
-            this.Size = new System.Drawing.Size(900, 504);
+            this.Size = new System.Drawing.Size(892, 574);
             this.ResumeLayout(false);
 
         }

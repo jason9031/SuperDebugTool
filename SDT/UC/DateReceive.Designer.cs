@@ -87,7 +87,7 @@
             this.DR_textBox.Name = "DR_textBox";
             this.DR_textBox.ReadOnly = true;
             this.DR_textBox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.DR_textBox.Size = new System.Drawing.Size(789, 212);
+            this.DR_textBox.Size = new System.Drawing.Size(876, 311);
             this.DR_textBox.TabIndex = 3;
             // 
             // DR_CMS
@@ -132,7 +132,7 @@
             // DR_datanum_lb
             // 
             this.DR_datanum_lb.AutoSize = true;
-            this.DR_datanum_lb.Location = new System.Drawing.Point(4, 249);
+            this.DR_datanum_lb.Location = new System.Drawing.Point(2, 341);
             this.DR_datanum_lb.Name = "DR_datanum_lb";
             this.DR_datanum_lb.Size = new System.Drawing.Size(77, 12);
             this.DR_datanum_lb.TabIndex = 4;
@@ -141,7 +141,7 @@
             // DR_datanum_lLb
             // 
             this.DR_datanum_lLb.AutoSize = true;
-            this.DR_datanum_lLb.Location = new System.Drawing.Point(70, 249);
+            this.DR_datanum_lLb.Location = new System.Drawing.Point(81, 341);
             this.DR_datanum_lLb.Name = "DR_datanum_lLb";
             this.DR_datanum_lLb.Size = new System.Drawing.Size(11, 12);
             this.DR_datanum_lLb.TabIndex = 5;
@@ -153,7 +153,7 @@
             // 
             this.DR_mes_lb.AutoSize = true;
             this.DR_mes_lb.ForeColor = System.Drawing.Color.Red;
-            this.DR_mes_lb.Location = new System.Drawing.Point(638, 249);
+            this.DR_mes_lb.Location = new System.Drawing.Point(749, 341);
             this.DR_mes_lb.Name = "DR_mes_lb";
             this.DR_mes_lb.Size = new System.Drawing.Size(131, 12);
             this.DR_mes_lb.TabIndex = 6;
@@ -183,7 +183,7 @@
             this.Controls.Add(this.DR_Hex_rB);
             this.Controls.Add(this.DR_AutoLine_chB);
             this.Name = "DateReceive";
-            this.Size = new System.Drawing.Size(796, 264);
+            this.Size = new System.Drawing.Size(892, 364);
             this.DR_CMS.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

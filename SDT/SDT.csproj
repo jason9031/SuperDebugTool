@@ -132,6 +132,9 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1254.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -344,6 +347,7 @@
   <ItemGroup>
     <None Include="Resource\SP_Redlight.png" />
     <None Include="Resource\SP_Greenlight.png" />
+    <Content Include="1254.ico" />
     <Content Include="UC\readme.txt" />
   </ItemGroup>
   <ItemGroup />

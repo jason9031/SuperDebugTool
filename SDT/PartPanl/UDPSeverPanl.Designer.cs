@@ -36,25 +36,25 @@
             // 
             // UDPSever
             // 
-            this.UDPSever.Location = new System.Drawing.Point(3, 3);
+            this.UDPSever.Location = new System.Drawing.Point(0, 0);
             this.UDPSever.Name = "UDPSever";
-            this.UDPSever.Size = new System.Drawing.Size(177, 221);
+            this.UDPSever.Size = new System.Drawing.Size(180, 210);
             this.UDPSever.TabIndex = 0;
             this.UDPSever.DataReceived += new ZXBC.Lib.ZxbcEvent.DataReceivedHandler(this.UDPSever_DataReceived);
             // 
             // UDPSever_dataSend
             // 
-            this.UDPSever_dataSend.Location = new System.Drawing.Point(173, 7);
+            this.UDPSever_dataSend.Location = new System.Drawing.Point(180, 0);
             this.UDPSever_dataSend.Name = "UDPSever_dataSend";
-            this.UDPSever_dataSend.Size = new System.Drawing.Size(670, 217);
+            this.UDPSever_dataSend.Size = new System.Drawing.Size(712, 210);
             this.UDPSever_dataSend.TabIndex = 1;
             this.UDPSever_dataSend.EventDataSend += new ZXBC.Lib.ZxbcEvent.DataSendHandler(this.UDPSever_dataSend_EventDataSend);
             // 
             // UDPSever_tabDataReceive
             // 
-            this.UDPSever_tabDataReceive.Location = new System.Drawing.Point(14, 230);
+            this.UDPSever_tabDataReceive.Location = new System.Drawing.Point(0, 210);
             this.UDPSever_tabDataReceive.Name = "UDPSever_tabDataReceive";
-            this.UDPSever_tabDataReceive.Size = new System.Drawing.Size(838, 317);
+            this.UDPSever_tabDataReceive.Size = new System.Drawing.Size(892, 364);
             this.UDPSever_tabDataReceive.TabIndex = 2;
             // 
             // UDPSeverPanl
@@ -65,7 +65,7 @@
             this.Controls.Add(this.UDPSever_dataSend);
             this.Controls.Add(this.UDPSever);
             this.Name = "UDPSeverPanl";
-            this.Size = new System.Drawing.Size(906, 572);
+            this.Size = new System.Drawing.Size(892, 574);
             this.ResumeLayout(false);
 
         }
