@@ -166,6 +166,12 @@
     <Compile Include="Lib\TCPClient.cs" />
     <Compile Include="Lib\UDPClient.cs" />
     <Compile Include="Lib\ZxbcEvent.cs" />
+    <Compile Include="PartPanl\BasePanel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PartPanl\BasePanel.Designer.cs">
+      <DependentUpon>BasePanel.cs</DependentUpon>
+    </Compile>
     <Compile Include="PartPanl\PingPanel.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,11 +207,6 @@
     </Compile>
     <Compile Include="PartPanl\UDPSeverPanl.Designer.cs">
       <DependentUpon>UDPSeverPanl.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Resource\picture.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>picture.resx</DependentUpon>
     </Compile>
     <Compile Include="SDT.cs">
       <SubType>Form</SubType>
@@ -297,10 +298,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="Resource\picture.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>picture.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Include="SDT.resx">
       <DependentUpon>SDT.cs</DependentUpon>
     </EmbeddedResource>
@@ -345,9 +342,17 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resource\SP_Redlight.png" />
-    <None Include="Resource\SP_Greenlight.png" />
     <Content Include="1254.ico" />
+    <None Include="Resources\ucom.png" />
+    <None Include="Resources\com.ico" />
+    <None Include="Resources\tcp.ico" />
+    <None Include="Resources\udp.ico" />
+    <None Include="Resources\SP_Greenlight.png" />
+    <None Include="Resources\SP_Redlight.png" />
+    <None Include="Resources\ucom.ico" />
+    <None Include="Resources\utcp.ico" />
+    <None Include="Resources\uudp.ico" />
+    <None Include="Resources\calculator.png" />
     <Content Include="UC\readme.txt" />
   </ItemGroup>
   <ItemGroup />

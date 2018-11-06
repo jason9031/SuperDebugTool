@@ -27,5 +27,10 @@ namespace ZXBC.PartPanl
         {
             Com_dateReceive.AddData(data);
         }
+        /*
+        public override void ClearSelf()
+        {
+            Com_serialPortCom.ClearSelf();
+        }*/
     }
 }

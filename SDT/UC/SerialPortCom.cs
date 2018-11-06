@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
 using ZXBC.Lib;
+using ZXBC.Properties;
 
 namespace ZXBC.UC
 {
@@ -29,7 +30,7 @@ namespace ZXBC.UC
             SP_Parity.SelectedIndex = 0;
             SP_DataBits.SelectedIndex = 0;
             SP_StopBits.SelectedIndex = 0;
-            SP_pictureBox.BackgroundImage = Resource.picture.SP_Redlight;
+            SP_pictureBox.BackgroundImage = Resources.SP_Redlight;
             ComDevice.DataReceived += new SerialDataReceivedEventHandler(Com_DataReceived);
         }
         /// <summary>
@@ -65,7 +66,7 @@ namespace ZXBC.UC
                     return;
                 }
                 SP_btn.Text = "关闭串口";
-                SP_pictureBox.BackgroundImage = Resource.picture.SP_Greenlight;
+                SP_pictureBox.BackgroundImage = Resources.SP_Greenlight;
             }
             else
             {
@@ -79,7 +80,7 @@ namespace ZXBC.UC
                     MessageBox.Show(" 串口关闭错误 ", "错误");
                 }
                 SP_btn.Text = "打开串口";
-                SP_pictureBox.BackgroundImage = Resource.picture.SP_Redlight;
+                SP_pictureBox.BackgroundImage = Resources.SP_Redlight;
             }
 
             SP_ComList.Enabled = !ComDevice.IsOpen;
@@ -113,5 +114,17 @@ namespace ZXBC.UC
             }
             return false;
         }
+
+        /// <summary>
+        /// 关闭串口
+        /// </summary>
+        public void ClearSelf()
+        {
+            if (ComDevice.IsOpen)
+            {
+                ComDevice.Close();
+            }
+        }
+
     }
 }
